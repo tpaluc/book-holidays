@@ -1,0 +1,79 @@
+
+//media
+
+@media (max-width: 968px) {
+
+    .navbar {
+        // background-color: lightcoral;
+        width: 100vw;
+        height: 8cqi;
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .navbar__left {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        height: 31px;
+        display: flex;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+
+    .input__label {
+        background-color: $bg-clr-items;
+        padding: 5px 10px;
+        border-radius: 0.25rem;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 14px;
+        color: $text-clr-secondary;
+    }
+
+    .input__search {
+        border: none;
+        font-size: 14px;
+        background-color: $bg-clr-items;
+        color: $text-clr-secondary;
+    }
+
+    .navbar__form {
+        font-weight: $fw-normal;
+    
+    }
+    .navbar__list {
+        display: none;
+    }
+    .navbar__element {
+        font-weight: $fw-normal;
+    }
+    .navbar__link {
+        text-decoration: none;
+        color: $text-clr-primary;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    .submenu__link {
+        text-decoration: none;
+        color: $text-clr-primary;
+    }
+
+    .burger__icon {
+        color: $text-clr-secondary;
+        align-self: flex-end;
+        margin-right: 10px;
+        border: 0.25px solid $text-clr-secondary;
+        padding: 4px 12px;
+        height: 20px;
+        border-radius: 0.25rem;
+    }
+
+}

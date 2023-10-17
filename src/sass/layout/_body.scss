@@ -1,0 +1,125 @@
+
+
+@media (max-width: 968px) {
+
+    // WELCOME SECTION
+
+    .welcome-section {
+        // max-width: 100vh;
+        min-height: 80vh;
+        padding-top: 50px;
+        background-image: url("../image/seahome.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .heading__big--welcome {
+        font-weight: 900;
+        color: #fff;
+        margin-top: 0;
+    }
+
+    .search-box {
+        background-color: #fff;
+        width: 70vw;
+        height: 200px;
+        margin-top: 100px;
+        border-radius: 0.75rem;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .search__option {
+        display: none;
+    }
+
+    .search-box__input {
+        cursor: text;
+        font-size: 16px;
+        height: 20px;
+        line-height: 26px;
+        padding: 10px 20px;
+        border-bottom: 1px solid $text-clr-secondary;
+    }
+
+    .search-box__categories {
+        padding-left: 20px;
+        font-size: 13px;
+        font-weight: $fw-bold;
+        letter-spacing: 3.9px;
+        color: $text-clr-secondary;
+    }
+
+    .search-box__btn {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+//INFO-SECTION
+
+    .info-container {
+        min-height: 100vh;
+        background-color: $bg-clr-secondary;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .heading__big--info {
+        margin-bottom: 50px;
+        font-size: 29px;
+        font-weight: $fw-bold;
+        line-height: 39px;
+    }
+
+    .heading__small--info {
+        font-size: 16px;
+        letter-spacing: 3.2px;
+    }
+
+    .info__box {
+        // display: flex;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .fa-map,
+    .fa-credit-card,
+    .fa-heart {
+        font-size: 40px;
+        background-color: #E4E8FE;
+        padding: 15px 15px;
+        border-radius: 50%;
+        color: #7386F9;
+        margin-bottom: 15px;
+    }
+
+    .info__box-header {
+        font-size: 20px;
+        font-weight: $fw-bold;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    .info__box--text {
+        font-size: 16px;
+        font-weight: $fw-normal;
+        margin-bottom: 16px;
+        line-height: 26px;
+        color: $text-clr-secondary;
+    }
+
+}

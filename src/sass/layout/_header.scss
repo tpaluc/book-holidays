@@ -1,0 +1,21 @@
+
+.heading {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.heading__big {
+    font-size: $fz-header;
+    color: $text-clr-primary;
+    font-weight: $fw-bold;
+    line-height: 79px;
+}
+
+.heading__small {
+    font-size: $fz-header-small;
+    color: $text-clr-pink;
+    font-weight: $fw-bold;
+    letter-spacing: 6.4px;
+
+}
