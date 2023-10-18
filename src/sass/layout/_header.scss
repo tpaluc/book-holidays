@@ -17,5 +17,47 @@
     color: $text-clr-pink;
     font-weight: $fw-bold;
     letter-spacing: 6.4px;
+    text-transform: uppercase;
 
+}
+
+.heading--more {
+    // background-color: rgb(252, 105, 105);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+.heading__header--more {
+    text-align: left;
+    padding-left: 100px;
+    
+}
+
+.heading__big--more {
+    font-size: 29px;
+    line-height: 39px;
+    padding-left: 5%;
+}
+
+.heading__small--more {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    padding-left: 5%;
+}
+
+.heading__link {
+    text-decoration: none;
+    color: $text-clr-secondary;
+    padding-right: 5%;
+    padding-right: 100px;
+}
+
+.heading__link:hover {
+    text-decoration: underline;
+    
 }

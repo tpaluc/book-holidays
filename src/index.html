@@ -1,102 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>DIRECTORY</title>
 </head>
+
 <body>
     <header>
 
         <nav>
             <div class="navbar">
                 <div class="navbar__left">
-                <div class="logo navbar__logo">
-                    <img src="./image/logo.svg" alt="">
+                    <div class="logo navbar__logo">
+                        <img src="./image/logo.svg" alt="">
+                    </div>
+                    <div class="input__label">
+                        <label for="search_search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <input class="input__search" placeholder="Search" aria-label="Search" id="search_search">
+                    </div>
                 </div>
-                <div class="input__label">
-                    <label for="search_search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </label>
-                    <input class="input__search" placeholder="Search" aria-label="Search" id="search_search">
-                </div>
-            </div>
-            <div class="navbar__right">
-                <ul class="navbar__list">
-                    <li class="navbar__element">
-                        <a href="#" class="navbar__link">
-                            Home
-                        </a>
-                        <ul class="submenu">
-                            <li class="submenu__element">
-                                <a href="" class="submenu__link">
-                                    Rooms
-                                </a>
-                            </li>
-                            <li class="submenu__element">
-                                <a href="" class="submenu__link">
-                                    Restaurant
-                                </a>
-                            </li>
-                            <li class="submenu__element">
-                                <a href="" class="submenu__link">
-                                    Travel
-                                </a>
-                            </li>
-                            <li class="submenu__element">
-                                <a href="" class="submenu__link">
-                                    Real estate 
+                <div class="navbar__right">
+                    <ul class="navbar__list">
+                        <li class="navbar__element">
+                            <a href="#" class="navbar__link">
+                                Home
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu__element">
+                                    <a href="" class="submenu__link">
+                                        Rooms
+                                    </a>
+                                </li>
+                                <li class="submenu__element">
+                                    <a href="" class="submenu__link">
+                                        Restaurant
+                                    </a>
+                                </li>
+                                <li class="submenu__element">
+                                    <a href="" class="submenu__link">
+                                        Travel
+                                    </a>
+                                </li>
+                                <li class="submenu__element">
+                                    <a href="" class="submenu__link">
+                                        Real estate
                                         <div class="submenu__element submenu__element--special">
                                             New
                                         </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar__element">
-                        <a href="#" class="navbar__link">
-                            Template
-                        </a>
-                    </li>
-                    <li class="navbar__element">
-                        <a href="#" class="navbar__link">
-                            Contact
-                        </a>
-                    </li>
-                    <li class="navbar__element">
-                        <a href="#" class="navbar__link">
-                            Docs
-                        </a>
-                    </li>
-                    <li class="navbar__element">
-                        <a href="#" class="navbar__link">
-                            Sign in
-                        </a>
-                    </li>
-                    <li class="navbar__element">
-                        <a href="#" class="navbar__link">
-                            Sign up
-                        </a>
-                    </li>
-                    <button class="navbar__btn btn">Add a listing</button>
-                </ul>
-                <div class="burger navbar__burger-menu">
-                    <svg class="burger__icon" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.75 5.75h14.5"></path>
-                        <path d="M4.75 18.25h14.5"></path>
-                        <path d="M4.75 12h14.5"></path>
-                      </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__element">
+                            <a href="#" class="navbar__link">
+                                Template
+                            </a>
+                        </li>
+                        <li class="navbar__element">
+                            <a href="#" class="navbar__link">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="navbar__element">
+                            <a href="#" class="navbar__link">
+                                Docs
+                            </a>
+                        </li>
+                        <li class="navbar__element">
+                            <a href="#" class="navbar__link">
+                                Sign in
+                            </a>
+                        </li>
+                        <li class="navbar__element">
+                            <a href="#" class="navbar__link">
+                                Sign up
+                            </a>
+                        </li>
+                        <button class="navbar__btn btn">Add a listing</button>
+                    </ul>
+                    <div class="burger navbar__burger-menu">
+                        <svg class="burger__icon" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.75 5.75h14.5"></path>
+                            <path d="M4.75 18.25h14.5"></path>
+                            <path d="M4.75 12h14.5"></path>
+                        </svg>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </header>
@@ -112,15 +120,16 @@
                     </h1>
                 </div>
                 <div class="search-box">
-                    <input name="search" placeholder="What are you searching for?" type="text" class="search-box__input">
+                    <input name="search" placeholder="What are you searching for?" type="text"
+                        class="search-box__input">
                     <input name="location" placeholder="Location" type="text" class="search-box__input">
                     <search class="search-box__search">
                         <div class="search-box__categories">CATEGORIES</div>
-                            <option value="restaurants" class="search__option">Restaurants</option>
-                            <option value="hotels" class="search__option">Hotels</option>
-                            <option value="cafes" class="search__option">Cafes</option>
-                            <option value="garages" class="search__option">Garages</option>
-                        
+                        <option value="restaurants" class="search__option">Restaurants</option>
+                        <option value="hotels" class="search__option">Hotels</option>
+                        <option value="cafes" class="search__option">Cafes</option>
+                        <option value="garages" class="search__option">Garages</option>
+
                     </search>
                     <button class="search-box__btn btn">Search</button>
                 </div>
@@ -141,21 +150,24 @@
                         <i class="fa-regular fa-map"></i>
                         <h3 class="info__box-header">Find the perfect rental</h3>
                         <p class="info__box-text">
-                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in
+                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in
+                            his bed in
                         </p>
                     </div>
                     <div class="info__box">
                         <i class="fa-regular fa-credit-card"></i>
                         <h3 class="info__box-header">Book with confidence</h3>
                         <p class="info__box-text">
-                            The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit
+                            The bedding was hardly able to cover it and seemed ready to slide off any moment. His many
+                            legs, pit
                         </p>
                     </div>
                     <div class="info__box">
                         <i class="fa-regular fa-heart"></i>
                         <h3 class="info__box-header">Book with confidence</h3>
                         <p class="info__box-text">
-                            His room, a proper human room although a little too small, lay peacefully between its four familiar
+                            His room, a proper human room although a little too small, lay peacefully between its four
+                            familiar
                         </p>
                     </div>
                 </div>
@@ -164,20 +176,29 @@
         <section class="guides-section">
             <div class="container guides-container">
                 <div class="heading heading--more">
-                    <div class="heading--more__header heading">
-                        <h2 class="heading-more__small">
+                    <div class="heading__header heading__header--more">
+                        <h2 class="heading__small heading__small--more">
                             stay and eat like a local
                         </h2>
-                        <h1 class="heading-more__big">
+                        <h1 class="heading__big heading__big--more">
                             Our guides
                         </h1>
                     </div>
-                    <a class="heading-more__link" href="#">see all guides</a>
+                    <a class="heading__link heading__link--more" href="#">
+                        see all guides
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
                 <div class="guides">
-                    <div class="guides__box">
-                        <h4 class="guide__header">New York</h4>
+                    <div class="guides__box guides__box--prague">
+
+                        <p class="guide__text">City of hundred towers</p>
+                        <h4 class="guide__header">prague</h4>
+                    </div>
+                    <div class="guides__box guides__box--ny">
                         <p class="guide__text">The big apple</p>
+                        <h4 class="guide__header">New York</h4>
+
                     </div>
                 </div>
             </div>
@@ -193,13 +214,16 @@
                             Last minute deals
                         </h1>
                     </div>
-                    <a class="heading__link--more heading__link" href="#">see all deals</a>
+                    <a class="heading__link heading__link--more" href="#">
+                        see all guides
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
                 <div class="deals-boxes">
                     <div class="deals-box">
                         <div class="deals-box__top">
                             <div class="deals-box__tittle">
-                                <img src="" alt="" class="deals-box__img">
+                                <img src="../image/woman.webp" alt="" class="deals-box__img">
                                 <p class="deals-box__name">Pamela</p>
                             </div>
                         </div>
@@ -209,7 +233,13 @@
                             </h5>
                             <div class="deals-box__room">
                                 <p class="deals-box__room deals-box__room--type">Private room</p>
-                                <p class="deals-box__room deals-box__room--rating">xxxxx</p>
+                                <p class="deals-box__room deals-box__room--rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-star"></i>
+                                </p>
                             </div>
                             <div class="deals-box__price">
                                 <p class="deals-box__price deals-box__price--price">$80</p>
@@ -218,9 +248,9 @@
                         </div>
                     </div>
                     <div class="deals-box">
-                        <div class="deals-box__top">
-                            <div class="deals-box__tittle">
-                                <img src="" alt="" class="deals-box__img">
+                        <div class="deals-box__top deals-box__top--john">
+                            <div class="deals-box__tittle deals-box__tittle--john">
+                                <img src="../image/man.webp" alt="" class="deals-box__img">
                                 <p class="deals-box__name">John</p>
                             </div>
                         </div>
@@ -230,7 +260,13 @@
                             </h5>
                             <div class="deals-box__room">
                                 <p class="deals-box__room deals-box__room--type">Entire apartment</p>
-                                <p class="deals-box__room deals-box__room--rating">xxxxx</p>
+                                <p class="deals-box__room deals-box__room--rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-star--gray"></i>
+                                </p>
                             </div>
                             <div class="deals-box__price">
                                 <p class="deals-box__price deals-box__price deals-box__price--price">$121</p>
@@ -241,33 +277,35 @@
                 </div>
                 <div class="deals-start">
                     <h1 class="deals-start__header">
-                        ready for your next holidays?
+                        Ready for your next holidays?
                     </h1>
-                    <button class="deals-start__btn btn"></button>
+                    <button class="deals-start__btn btn">get started</button>
                 </div>
             </div>
         </section>
         <section class="reviews-section">
             <div class="container reviews-container">
                 <div class="heading">
-                    <h2 class="heading__small">
+                    <h2 class="heading__small heading__small--reviews">
                         testimontals
                     </h2>
-                    <h1 class="heading__big">
+                    <h1 class="heading__big heading__big--reviews">
                         Our dear customers said about us
                     </h1>
                 </div>
                 <div class="reviews">
                     <div class="review">
-                        <img src="" alt="" class="review__img">
-                        <img src="" alt="" class="review__quote">
-                        <p class="review__opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate in doloremque dolorum? Nemo</p>
+                        <img src="../image/woman.webp" alt="" class="review__img">
+                        <i class="fa-solid fa-quote-left review__quote"></i>
+                        <p class="review__opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                            in doloremque dolorum? Nemo</p>
                         <p class="review__signature">Jessica Watson</p>
                     </div>
                     <div class="review">
-                        <img src="" alt="" class="review__img">
-                        <img src="" alt="" class="review__quote">
-                        <p class="review__opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate in doloremque dolorum? Nemo</p>
+                        <img src="../image/woman.webp" alt="" class="review__img">
+                        <i class="fa-solid fa-quote-left review__quote"></i>
+                        <p class="review__opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                            in doloremque dolorum? Nemo</p>
                         <p class="review__signature">Jessica Watson</p>
                     </div>
                 </div>
@@ -277,76 +315,79 @@
             <div class="container blog-container">
                 <div class="heading heading--more">
                     <div class="heading__header--more heading__header">
-                        <h2 class="heading__small heading__small--more">
+                        <h2 class="heading__small heading__small--more heading__small--blog">
                             stories from around the globe
                         </h2>
                         <h1 class="heading__big heading__big--more">
                             From our travel blog
                         </h1>
                     </div>
-                    <a class="heading__link--more heading__link" href="#">see all articles</a>
+                    <a class="heading__link--more heading__link" href="#">
+                        See all articles
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
-                <div class="deals-boxes">
-                    <div class="deals-box">
-                        <div class="deals-box__top">
-                            <img src="" alt="" class="deals-box__img">
+                <div class="deals-boxes deals-boxes__blog">
+                    <div class="deals-box deals-box__blog">
+                        <div class="deals-box__top deals-box__top--blog deals-box__top--1">
                         </div>
-                        <div class="deals-box__bottom">
-                            <p class="deals-box__tittle">
+                        <div class="deals-box__bottom deals-box__bottom--blog">
+                            <p class="deals-box__tittle deals-box__tittle--blog">
                                 TRAVEL
                             </p>
-                            <h5 class="deals-box__header">
+                            <h5 class="deals-box__header deals-box__header--blog">
                                 Escape the city today
                             </h5>
                             <p class="deals-box__date">
                                 January 16,2023
                             </p>
                             <p class="deals-box__text">
-                                Is am hastily invited settied at limieted civility fortune me. Really spring inextent an by. Judge but built party world...
+                                Is am hastily invited settied at limieted civility fortune me. Really spring inextent an
+                                by. Judge but built party world...
                             </p>
                             <a class="deals-box__link" href="#">
                                 READ MORE
                             </a>
                         </div>
                     </div>
-                    <div class="deals-box">
-                        <div class="deals-box__top">
-                            <img src="" alt="" class="deals-box__img">
+                    <div class="deals-box deals-box__blog">
+                        <div class="deals-box__top deals-box__top--2">
                         </div>
-                        <div class="deals-box__bottom">
-                            <p class="deals-box__tittle">
+                        <div class="deals-box__bottom deals-box__bottom--blog">
+                            <p class="deals-box__tittle deals-box__tittle--blog">
                                 TRAVEL
                             </p>
-                            <h5 class="deals-box__header">
+                            <h5 class="deals-box__header deals-box__header--blog">
                                 Autumn fashion tips and tricks
                             </h5>
                             <p class="deals-box__date">
                                 January 16,2023
                             </p>
                             <p class="deals-box__text">
-                                Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, feugiat vitae, ultricies ege...
+                                Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, feugiat vitae,
+                                ultricies ege...
                             </p>
                             <a class="deals-box__link" href="#">
                                 READ MORE
                             </a>
                         </div>
                     </div>
-                    <div class="deals-box">
-                        <div class="deals-box__top">
-                            <img src="" alt="" class="deals-box__img">
+                    <div class="deals-box deals-box__blog">
+                        <div class="deals-box__top deals-box__top--3">
                         </div>
-                        <div class="deals-box__bottom">
-                            <p class="deals-box__tittle">
+                        <div class="deals-box__bottom deals-box__bottom--blog">
+                            <p class="deals-box__tittle deals-box__tittle--blog">
                                 LIVING
                             </p>
-                            <h5 class="deals-box__header">
+                            <h5 class="deals-box__header deals-box__header--blog">
                                 Newest photo apps
                             </h5>
                             <p class="deals-box__date">
                                 January 16,2023
                             </p>
                             <p class="deals-box__text">
-                                ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibu...
+                                ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas. Vestibu...
                             </p>
                             <a class="deals-box__link" href="#">
                                 READ MORE
@@ -361,12 +402,16 @@
         <section class="footer-section">
             <div class="container footer-container">
                 <div class="footer">
-                    <ul class="footer__list">
+                    <ul class="footer__list footer__list--directory">
                         <li class="footer__element footer__element--header">Directory</li>
                         <li class="footer__element">Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
                         <li class="footer__element">
                             <a href="#" class="footer__link">
-                                Socials
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-pinterest"></i>
+                                <i class="fa-brands fa-vimeo"></i>
                             </a>
                         </li>
                     </ul>
@@ -416,17 +461,22 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="footer__list">
-                        <li class="footer__element footer__element--header">Directory</li>
-                        <li class="footer__element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus</li>
-                        <div class="input">
-                        <input class="footer__input" type="text">
-                        <button class="input__btn">Strzalka</button>
-                    </div>
+                    <ul class="footer__list footer__list--daily">
+                        <li class="footer__element footer__element--header">Daily offers & discounts</li>
+                        <li class="footer__element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+                            temporibus</li>
+                        <div class="input input__footer">
+                            <input placeholder="Your Email Address" class="footer__input" type="text">
+                            <button class="input__btn btn">
+                                <i class="fa-solid fa-paper-plane">
+                                </i>
+                            </button>
+                        </div>
                     </ul>
                 </div>
             </div>
         </section>
     </footer>
 </body>
+
 </html>
