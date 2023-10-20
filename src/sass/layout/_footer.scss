@@ -1,4 +1,3 @@
-
 @media (max-width: 968px) {
     .footer {
         display: flex;
@@ -68,5 +67,69 @@
     .footer__input {
         background-color: $bg-clr-secondary;
     }
+}
 
+// BROWSER SCREEN
+
+@media (min-width: 968px) {
+    .footer {
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 200px;
+        height: 400px;
+        flex-wrap: wrap;
+        font-family: 'poppins', serif;
+        background-color: $bg-clr-secondary;
+        padding-left: 100px;
+    }
+
+    .footer__list {
+        margin-left: 20px;
+        margin-bottom: 45px;
+        color: $text-clr-secondary;
+        padding-right: 20px;
+    }
+
+    .footer__element {
+        margin-bottom: 10px;
+    }
+
+    .footer__element--header {
+        font-weight: $fw-bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .footer__link {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 25px;
+        color: $text-clr-secondary;
+    }
+
+    .footer__link:hover {
+        text-decoration: underline;
+    }
+
+    .input__footer {
+        width: 80%;
+        border: 1px solid $text-clr-secondary;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0.50rem;
+    }
+
+    .input__btn {
+        background-color: $bg-clr-secondary;
+        color: $text-clr-secondary;
+        font-size: 20px;
+    }
+
+    .footer__input {
+        background-color: $bg-clr-secondary;
+    }
 }

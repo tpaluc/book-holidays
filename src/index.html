@@ -22,7 +22,6 @@
 
 <body>
     <header>
-
         <nav>
             <div class="navbar">
                 <div class="navbar__left">
@@ -38,9 +37,10 @@
                 </div>
                 <div class="navbar__right">
                     <ul class="navbar__list">
-                        <li class="navbar__element">
-                            <a href="#" class="navbar__link">
+                        <li class="navbar__element js-submenu">
+                            <a href="#" class="navbar__link js-submenu-trigger">
                                 Home
+                                <i class="fa-solid fa-chevron-down"></i>
                             </a>
                             <ul class="submenu">
                                 <li class="submenu__element">
@@ -60,10 +60,7 @@
                                 </li>
                                 <li class="submenu__element">
                                     <a href="" class="submenu__link">
-                                        Real estate
-                                        <div class="submenu__element submenu__element--special">
-                                            New
-                                        </div>
+                                        Real estate<span class="submenu__span">New</span>
                                     </a>
                                 </li>
                             </ul>
@@ -71,6 +68,7 @@
                         <li class="navbar__element">
                             <a href="#" class="navbar__link">
                                 Template
+                                <i class="fa-solid fa-chevron-down"></i>
                             </a>
                         </li>
                         <li class="navbar__element">
@@ -81,6 +79,7 @@
                         <li class="navbar__element">
                             <a href="#" class="navbar__link">
                                 Docs
+                                <i class="fa-solid fa-chevron-down"></i>
                             </a>
                         </li>
                         <li class="navbar__element">
@@ -95,15 +94,16 @@
                         </li>
                         <button class="navbar__btn btn">Add a listing</button>
                     </ul>
-                    <div class="burger navbar__burger-menu">
-                        <svg class="burger__icon" width="24" height="24" fill="none" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.75 5.75h14.5"></path>
-                            <path d="M4.75 18.25h14.5"></path>
-                            <path d="M4.75 12h14.5"></path>
-                        </svg>
-                    </div>
+
+                </div>
+                <div class="burger navbar__burger-menu">
+                    <svg class="burger__icon" width="24" height="24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.75 5.75h14.5"></path>
+                        <path d="M4.75 18.25h14.5"></path>
+                        <path d="M4.75 12h14.5"></path>
+                    </svg>
                 </div>
             </div>
         </nav>
@@ -122,15 +122,17 @@
                 <div class="search-box">
                     <input name="search" placeholder="What are you searching for?" type="text"
                         class="search-box__input">
-                    <input name="location" placeholder="Location" type="text" class="search-box__input">
-                    <search class="search-box__search">
-                        <div class="search-box__categories">CATEGORIES</div>
-                        <option value="restaurants" class="search__option">Restaurants</option>
-                        <option value="hotels" class="search__option">Hotels</option>
-                        <option value="cafes" class="search__option">Cafes</option>
-                        <option value="garages" class="search__option">Garages</option>
-
-                    </search>
+                    <input name="location" placeholder="Location" type="text"
+                        class="search-box__input search-box__input--location">
+                    <div class="search-input">
+                        <span class="search-box__categories">CATEGORIES</span>
+                        <ul class="search-js">
+                            <li value="restaurants" class="search__option">Restaurants</li>
+                            <li value="hotels" class="search__option">Hotels</li>
+                            <li value="cafes" class="search__option">Cafes</li>
+                            <li value="garages" class="search__option">Garages</li>
+                        </ul>
+                    </div>
                     <button class="search-box__btn btn">Search</button>
                 </div>
             </div>
@@ -198,7 +200,14 @@
                     <div class="guides__box guides__box--ny">
                         <p class="guide__text">The big apple</p>
                         <h4 class="guide__header">New York</h4>
-
+                    </div>
+                    <div class="guides__box guides__box--parris">
+                        <p class="guide__text">Artist capital of Europe</p>
+                        <h4 class="guide__header">Paris</h4>
+                    </div>
+                    <div class="guides__box guides__box--big">
+                        <p class="guide__text">Artist capital of Europe</p>
+                        <h4 class="guide__header">Paris</h4>
                     </div>
                 </div>
             </div>
@@ -238,7 +247,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                 </p>
                             </div>
                             <div class="deals-box__price">
@@ -248,6 +257,33 @@
                         </div>
                     </div>
                     <div class="deals-box">
+                        <div class="deals-box__top deals-box__top--john">
+                            <div class="deals-box__tittle deals-box__tittle--john">
+                                <img src="../image/man.webp" alt="" class="deals-box__img">
+                                <p class="deals-box__name">John</p>
+                            </div>
+                        </div>
+                        <div class="deals-box__bottom">
+                            <h5 class="deals-box__header">
+                                Cute Quirky Garden apt, NYC adjacent
+                            </h5>
+                            <div class="deals-box__room">
+                                <p class="deals-box__room deals-box__room--type">Entire apartment</p>
+                                <p class="deals-box__room deals-box__room--rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star fa-star--gray"></i>
+                                </p>
+                            </div>
+                            <div class="deals-box__price">
+                                <p class="deals-box__price deals-box__price deals-box__price--price">$121</p>
+                                <p class="deals-box__price deals-box__price--for">per night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deals-box deals-box--extra">
                         <div class="deals-box__top deals-box__top--john">
                             <div class="deals-box__tittle deals-box__tittle--john">
                                 <img src="../image/man.webp" alt="" class="deals-box__img">
@@ -302,6 +338,13 @@
                         <p class="review__signature">Jessica Watson</p>
                     </div>
                     <div class="review">
+                        <img src="../image/woman.webp" alt="" class="review__img">
+                        <i class="fa-solid fa-quote-left review__quote"></i>
+                        <p class="review__opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                            in doloremque dolorum? Nemo</p>
+                        <p class="review__signature">Jessica Watson</p>
+                    </div>
+                    <div class="review review--extra">
                         <img src="../image/woman.webp" alt="" class="review__img">
                         <i class="fa-solid fa-quote-left review__quote"></i>
                         <p class="review__opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
@@ -471,18 +514,34 @@
                         <li class="footer__element footer__element--header">Daily offers & discounts</li>
                         <li class="footer__element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
                             temporibus</li>
-                        <div class="input input__footer">
+                        <form class="input input__footer">
                             <input placeholder="Your Email Address" class="footer__input" type="text">
-                            <button class="input__btn btn">
-                                <i class="fa-solid fa-paper-plane">
-                                </i>
-                            </button>
-                        </div>
+                            <input placeholder="fa-regular fa-paper-plane" type="submit" class="input__btn btn">
+                        </form>
                     </ul>
                 </div>
             </div>
         </section>
     </footer>
+    <script>
+        console.log("dupka");
+
+        const trigger = document.querySelector('.js-submenu-trigger');
+        const submenu = document.querySelector('.submenu');
+
+        trigger.addEventListener("click", () => {
+            submenu.classList.toggle("active");
+        });
+
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.navbar__right');
+
+        burger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+
+    </script>
 </body>
 
 </html>

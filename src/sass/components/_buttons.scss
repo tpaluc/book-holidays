@@ -1,13 +1,13 @@
-
+$btn-height: 40px;
 
 .btn {
     border: none;
     background-color: $text-clr-blue;
     cursor: pointer;
-    font-size: 12px;
+    font-size: $fz-btn;
     font-weight: $fw-bold;
-    height: 40px;
-    letter-spacing: 3.9px;
+    height: $btn-height;
+    letter-spacing: $lt-space;
     line-height: 20.48px;
     padding: 8px 12px;
     color: $bg-clr-primary;
