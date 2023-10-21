@@ -1,7 +1,9 @@
-@media (max-width: 1055px) {
+$nav-media: 10055px;
+
+
+@media (max-width: $nav-media) {
 
     .navbar {
-        // background-color: lightcoral;
         max-width: 100vw;
         height: 8cqi;
         display: flex;
@@ -9,11 +11,49 @@
         justify-content: space-between;
         padding-right: 3%;
         padding-left: 2%;
-    }
 
-    .navbar__left {
-        display: flex;
-        align-items: center;
+        &__left {
+            display: flex;
+            align-items: center;
+        }
+
+        &__form {
+            font-weight: $fw-normal;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-family: 'poppins', serif;
+        }
+
+        &__right {
+            display: none;
+            position: absolute;
+            top: 8vh;
+            left: 0;
+            background-color: #fff;
+            width: 100%;
+            padding: 20px 20px;
+            height: 40vh;
+        }
+
+        &__right.active {
+            display: flex;
+        }
+    
+        &__element {
+            font-weight: $fw-normal;
+            padding-bottom: 15px;
+        }
+    
+        &__link {
+            text-decoration: none;
+            font-weight: $fw-bold;
+            font-size: 16px;
+            color: $text-clr-secondary;
+        }
     }
 
     .logo {
@@ -23,10 +63,19 @@
         padding-left: 10px;
     }
 
-    .input__label {
-        background-color: $bg-clr-items;
-        padding: 5px 10px;
-        border-radius: 0.25rem;
+    .input {
+        
+        &__label {
+            background-color: $bg-clr-items;
+            padding: 5px 10px;
+            border-radius: 0.25rem;
+        }
+        &__search {
+            border: none;
+            font-size: 14px;
+            background-color: $bg-clr-items;
+            color: $text-clr-secondary;
+        }
     }
 
     .fa-magnifying-glass {
@@ -34,58 +83,13 @@
         color: $text-clr-secondary;
     }
 
-    .input__search {
-        border: none;
-        font-size: 14px;
-        background-color: $bg-clr-items;
-        color: $text-clr-secondary;
-    }
-
-    .navbar__form {
-        font-weight: $fw-normal;
-    
-    }
-
-    .navbar__right {
-        display: none;
-        position: absolute;
-        top: 8vh;
-        left: 0;
-        background-color: #fff;
-        width: 100%;
-        padding: 20px 20px;
-        height: 40vh;
-    }
-
-    .navbar__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        font-family: 'poppins', serif;
-    }
-    .navbar__right.active {
-        display: flex;
-    }
-
-    .navbar__element {
-        font-weight: $fw-normal;
-        padding-bottom: 15px;
-    }
-
-    .navbar__link {
-        text-decoration: none;
-        font-weight: $fw-bold;
-        font-size: 16px;
-        color: $text-clr-secondary;
-    }
-
     .submenu {
         display: none;
-    }
 
-    .submenu__link {
-        text-decoration: none;
-        color: $text-clr-primary;
+        &__link {
+            text-decoration: none;
+            color: $text-clr-primary;
+        }
     }
 
     .burger__icon {
@@ -102,8 +106,6 @@
 @media (min-width: 1055px) {
 
     .navbar {
-        // background-color: lightcoral;
-        // position: fixed;
         top: 0;
         max-width: 100vw;
         height: 10vh;
@@ -111,11 +113,37 @@
         align-items: center;
         justify-content: space-between;
         font-family: 'poppins',serif;
-    }
 
-    .navbar__left {
-        display: flex;
-        align-items: center;
+        &__left {
+            display: flex;
+            align-items: center;
+        }
+
+        &__form {
+            font-weight: $fw-normal;
+        
+        }
+        &__list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 15px;
+        }
+        &__element {
+            font-weight: $fw-normal;
+            padding-right: 20px;
+            font-size: 14px;
+            font-weight: $fw-bold; 
+        }
+
+        &__link:hover {
+            color: $text-clr-primary;                                
+        }
+    
+        &__link {
+            text-decoration: none;
+            color: $text-clr-secondary;
+        }
     }
 
     .logo {
@@ -125,39 +153,25 @@
         padding-left: 10px;
     }
 
-    .input__label {
-        background-color: $bg-clr-items;
-        padding: 5px 10px;
-        border-radius: 0.25rem;
+    .input {
+        
+        &__label {
+            background-color: $bg-clr-items;
+            padding: 5px 10px;
+            border-radius: 0.25rem;
+        }
+
+        &__search {
+            border: none;
+            font-size: 14px;
+            background-color: $bg-clr-items;
+            color: $text-clr-secondary;
+        }
     }
 
     .fa-magnifying-glass {
         font-size: 14px;
         color: $text-clr-secondary;
-    }
-
-    .input__search {
-        border: none;
-        font-size: 14px;
-        background-color: $bg-clr-items;
-        color: $text-clr-secondary;
-    }
-
-    .navbar__form {
-        font-weight: $fw-normal;
-    
-    }
-    .navbar__list {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-right: 15px;
-    }
-    .navbar__element {
-        font-weight: $fw-normal;
-        padding-right: 20px;
-        font-size: 14px;
-        font-weight: $fw-bold; 
     }
 
     .submenu {
@@ -172,35 +186,25 @@
         padding: 10px 20px;
         border-radius: 0.75rem;
         font-weight: $fw-normal;
+
+        &__link {
+            text-decoration: none;
+            color: $text-clr-primary;
+        }
+
+        &__span {
+            background-color: #DCF1F4;
+            color: #29A9BD;
+            padding: 2px 5px;
+            margin-left: 5px;
+            border-radius: 0.5rem;
+            font-weight: $fw-bold;
+            font-size: 14px;
+        }
     }
 
     .submenu.active {
         display: flex;
-    }
-
-    .navbar__link:hover {
-        color: $text-clr-primary;                                
-    }
-
-
-    .navbar__link {
-        text-decoration: none;
-        color: $text-clr-secondary;
-    }
-
-    .submenu__link {
-        text-decoration: none;
-        color: $text-clr-primary;
-    }
-
-    .submenu__span {
-        background-color: #DCF1F4;
-        color: #29A9BD;
-        padding: 2px 5px;
-        margin-left: 5px;
-        border-radius: 0.5rem;
-        font-weight: $fw-bold;
-        font-size: 14px;
     }
 
     .burger__icon {
