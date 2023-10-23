@@ -1,0 +1,24 @@
+.search-js {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'poppins',serif;
+    font-size: $fz-standard;
+    color: $text-clr-secondary;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: $fz-standard;
+    line-height: 30px;
+}
+
+.search-js::-ms-expand {
+    display: none;
+
+}
+
+.search__option {
+    font-size: $fz-standard;
+}

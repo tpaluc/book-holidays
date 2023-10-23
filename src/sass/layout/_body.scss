@@ -36,7 +36,7 @@
             padding-left: 20px;
             font-size: 12px;
             font-weight: $fw-bold;
-            letter-spacing: 3.9px;
+            letter-spacing: $lt-space;
             color: $text-clr-secondary;
         }
 
@@ -55,13 +55,6 @@
         }
     }
 
-    .search-js {
-        display: none;
-        flex-direction: column;
-        position: relative;
-        background-color: #7386F9;
-        top: 20px;
-    }
 
     //INFO-SECTION
 
@@ -86,7 +79,7 @@
 
         &__small--info {
             font-size: $fz-standard;
-            letter-spacing: 3.2px;
+            letter-spacing: $lt-space-small;
         }
     }
 
@@ -373,17 +366,18 @@
         -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
         -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
         box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+
+
+
+        &__img {
+            width: 80px;
+            height: 80px;
+            align-self: center;
+            border-radius: 50%;
+            border: 2px solid white;
+            position: relative;
+            top: -20px;
     }
-
-
-    .review__img {
-        width: 80px;
-        height: 80px;
-        align-self: center;
-        border-radius: 50%;
-        border: 2px solid white;
-        position: relative;
-        top: -20px;
 
         &__quote {
             font-size: 55px;
@@ -504,7 +498,7 @@
             color: $text-clr-blue;
             line-height: 23px;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: $lt-space-small;
             text-decoration: none;
             font-weight: $fw-bold;
         }
@@ -581,7 +575,7 @@
             padding-left: 20px;
             font-size: 13px;
             font-weight: $fw-bold;
-            letter-spacing: 3.9px;
+            letter-spacing: $lt-space;
             color: $text-clr-secondary;
             padding-right: 40px;
         }
@@ -617,7 +611,7 @@
 
         &__small--info {
             font-size: $fz-standard;
-            letter-spacing: 3.2px;
+            letter-spacing: $lt-space;
         }
     }
 
@@ -988,7 +982,8 @@
 
         &__top--blog {
             width: 300px;
-            height:&}
+            height: 250px;
+        }
 
         &__top--1 {
             background-image: url("../image/domek.png");
@@ -1043,7 +1038,7 @@
             color: $text-clr-blue;
             line-height: 23px;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: $lt-space-small;
             text-decoration: none;
             font-weight: $fw-bold;
         }
@@ -1082,15 +1077,16 @@
 
     .search-box {
         background-color: #fff;
-        width: auto;
-        height: auto;
-        margin-top: 30px;
+        width: 60vw;
+        // height: auto;
+        margin-top: 50px;
         border-radius: 3rem;
-        padding: 5px 5px;
+        padding: 5px 20px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        position: relative;
     }
 
     .search__option {
@@ -1100,34 +1096,21 @@
     .search-box {
         
         &__input {
-            cursor: text;
             font-size: $fz-standard;
-            height: 20px;
-            width: 300px;
-            line-height: 26px;
-            padding: 10px 5px;
-            border-right: 1px solid #c4c5c9;
-            margin-left: 5px;
         }
 
         &__input--location {
-         width: 150px;
+            font-size: $fz-standard;
         }
 
-        &__categories {
-            padding-left: 20px;
-            font-size: 13px;
-            font-weight: $fw-bold;
-            letter-spacing: 3.9px;
-            color: $text-clr-secondary;
-            padding-right: 40px;
-        }
 
         &__btn {
-            margin-left: 10px;
-            border-radius: 3rem;
+            position: absolute;
+            right: 0;
+            margin-right: 5px;
         }
     }
+
 
     //INFO-SECTION
 
@@ -1153,7 +1136,7 @@
 
         &__small--info {
             font-size: $fz-standard;
-            letter-spacing: 3.2px;
+            letter-spacing: $lt-space-small;
         }
     }
 
@@ -1576,7 +1559,7 @@
             color: $text-clr-blue;
             line-height: 23px;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: $lt-space-small;
             text-decoration: none;
             font-weight: $fw-bold;
         }

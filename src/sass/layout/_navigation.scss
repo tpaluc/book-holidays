@@ -1,4 +1,4 @@
-$nav-media: 10055px;
+$nav-media: 1055px;
 
 
 @media (max-width: $nav-media) {
@@ -103,7 +103,7 @@ $nav-media: 10055px;
     }
 }
 
-@media (min-width: 1055px) {
+@media (min-width: $nav-media) {
 
     .navbar {
         top: 0;
@@ -121,8 +121,13 @@ $nav-media: 10055px;
 
         &__form {
             font-weight: $fw-normal;
-        
         }
+
+        &__right {
+            display: block;
+        }
+        
+        
         &__list {
             display: flex;
             justify-content: space-around;
@@ -144,6 +149,8 @@ $nav-media: 10055px;
             text-decoration: none;
             color: $text-clr-secondary;
         }
+
+
     }
 
     .logo {
